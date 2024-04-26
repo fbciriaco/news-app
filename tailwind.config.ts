@@ -13,14 +13,7 @@ const config: Config = {
         'dark-accent': '#975245',
         'light-accent': '#C18D53',
         'light-shades': '#F4F4EF',
-        'dark-shades': '#364754'
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      colors: {
+        'dark-shades': '#364754',
         primary: "#3490dc",
         secondary: "#ffed4a",
         tertiary: "#38a169",
@@ -38,6 +31,11 @@ const config: Config = {
           "800": "#1f2937",
           "900": "#111827",
         },
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
