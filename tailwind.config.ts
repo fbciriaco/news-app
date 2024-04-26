@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'main': '#bda88b',
-        'dark-accent': '#975245',
-        'light-accent': '#C18D53',
-        'light-shades': '#F4F4EF',
-        'dark-shades': '#364754',
-        primary: "#3490dc",
-        secondary: "#ffed4a",
-        tertiary: "#38a169",
+        main: "#0e3852",
+        "dark-accent": "#975245",
+        "light-accent": "#C18D53",
+        "light-shades": "#F4F4EF",
+        "dark-shades": "#364754",
+        primary: "#0e3852",
+        secondary: "#84657c",
+        tertiary: "#e0a8a3",
         accent: "#f6993f",
         textColor: "#1a202c",
         gray: {
