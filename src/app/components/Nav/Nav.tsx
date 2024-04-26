@@ -12,13 +12,13 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <nav className="h-[80px] bg-secondary flex w-full">
+    <nav className="h-[80px] bg-main flex w-full">
       <SectionContainer customClasses="flex justify-between items-center py-[10px]">
         <Logo />
         <div
           className={`burger-nav ${
             isNavOpen ? "open" : ""
-          } bg-blue-200 h-[50px] w-[50px]`}
+          } bg-light-shades h-[50px] w-[50px]`}
           onClick={toggleNav}
         >
           <div className="line"></div>
