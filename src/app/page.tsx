@@ -1,10 +1,11 @@
 import HeadlineFlex from "@/app/components/Headline/HeadlineFlex";
 import HeadlineGrid from "@/app/components/Headline/HeadlineGrid";
 import { mockArticle, mockArticles } from "./mock/mock";
+import SectionContainer from "./components/Layout/SectionContainer";
 
 export default function Home() {
   return (
-    <div>
+    <SectionContainer customClasses="my-[60px] flex-1">
       <main className="flex flex-col">
         <div style={{ border: 1 }}>
           <HeadlineFlex
@@ -25,6 +26,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </div>
+    </SectionContainer>
   );
 }

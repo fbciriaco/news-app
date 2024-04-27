@@ -25,9 +25,9 @@ export default function RootLayout({
         className={`${aleo.className} flex flex-col min-h-screen bg-grey-500 text-textColor`}
       >
         <Nav />
-        <SectionContainer customClasses="my-[60px] flex-1">
-          {children}
-        </SectionContainer>
+
+        {children}
+
         <Footer />
       </body>
     </html>
