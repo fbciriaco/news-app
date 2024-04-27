@@ -1,6 +1,6 @@
 import HeadlineFlex from "@/app/components/Headline/HeadlineFlex";
 import HeadlineGrid from "@/app/components/Headline/HeadlineGrid";
-import { mockArticle, mockArticles } from "./mockl/mock";
+import { mockArticle, mockArticles } from "./mock/mock";
 
 export default function Home() {
   return (
