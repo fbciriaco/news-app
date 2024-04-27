@@ -1,5 +1,3 @@
-// make article type
-
 export type ArticleData = {
   id: number;
   title: string;
@@ -10,6 +8,7 @@ export type ArticleData = {
   imageUrl: string;
   category: string;
   tags: string[];
+  slug: string;
 };
 
 export type ArticleList = ArticleData[];
