@@ -1,4 +1,4 @@
-import { ArticleData } from "@/app/types/types";
+import { ArticleData } from "@/app/_types/types";
 import Link from "next/link";
 
 export default function HeadlineFlex({
