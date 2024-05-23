@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Aleo } from "next/font/google";
 
-import Nav from "./components/Nav/Nav";
-import SectionContainer from "./components/Layout/SectionContainer";
-import Footer from "./components/Footer/Footer";
+import Nav from "./_components/Nav/Nav";
+import SectionContainer from "./_components/Layout/SectionContainer";
+import Footer from "./_components/Footer/Footer";
 
 import "./globals.css";
 

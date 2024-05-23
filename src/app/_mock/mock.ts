@@ -1,4 +1,4 @@
-import { ArticleData } from "../types/types";
+import { ArticleData } from "../_types/types";
 
 export const mockArticle: ArticleData = {
   id: 1,
