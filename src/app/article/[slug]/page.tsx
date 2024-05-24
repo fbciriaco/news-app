@@ -49,7 +49,7 @@ export default async function ArticlePage({
       <img
         src={imageUrl}
         alt={title}
-        className="w-full max-h-[600px] object-fit"
+        className="w-full max-h-[400px] object-cover"
       />
       <SectionContainer>
         <h1>{title}</h1>
