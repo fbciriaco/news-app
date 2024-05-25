@@ -18,6 +18,7 @@
     "react": "^18",
     "react-dom": "^18",
     "slate": "^0.103.0",
+    "styled-components": "^6.1.11",
     "ua-parser-js": "^1.0.37"
   },
   "devDependencies": {
