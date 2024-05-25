@@ -13,3 +13,14 @@ export type ArticleData = {
 
 export type ArticleList = ArticleData[];
 // test change
+
+export type NavItems = {
+  text: string;
+  path: string;
+  type: "link" | "dropdown";
+};
+
+export type CustomLinkType = {
+  text: string;
+  path: string;
+};

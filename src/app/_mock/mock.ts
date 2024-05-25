@@ -1,4 +1,4 @@
-import { ArticleData } from "../_types/types";
+import { ArticleData, NavItems } from "../_types/types";
 
 export const mockArticle: ArticleData = {
   id: 1,
@@ -40,4 +40,81 @@ export const mockArticles: ArticleData[] = [
     category: "Teste",
   },
   { ...mockArticle },
+];
+
+export const MOCK_LINKS: NavItems[] = [
+  {
+    text: "Home",
+    path: "/",
+    type: "link",
+  },
+  {
+    text: "Noticias",
+    path: "/noticias",
+    type: "link",
+  },
+  {
+    text: "Entrevistas",
+    path: "/entrevistas",
+    type: "link",
+  },
+  {
+    text: "Painel de Noticias",
+    path: "/painel",
+    type: "link",
+  },
+  {
+    text: "Vagas de Emprego",
+    path: "/vagas",
+    type: "link",
+  },
+  {
+    text: "Colunistas",
+    path: "/colunistas",
+    type: "link",
+  },
+  {
+    text: "Quem Somos",
+    path: "/quem-somos",
+    type: "link",
+  },
+];
+// Brasil, Cidades, Economia, Educação, Esportes, Internacional, Política, Saúde, Tecnologia
+export const MOCK_CATEGORIES = [
+  {
+    text: "Brasil",
+    path: "category/brasil",
+  },
+  {
+    text: "Cidades",
+    path: "category/cidades",
+  },
+  {
+    text: "Economia",
+    path: "category/economia",
+  },
+  {
+    text: "Educação",
+    path: "category/educacao",
+  },
+  {
+    text: "Esportes",
+    path: "category/esportes",
+  },
+  {
+    text: "Internacional",
+    path: "category/internacional",
+  },
+  {
+    text: "Política",
+    path: "category/politica",
+  },
+  {
+    text: "Saúde",
+    path: "category/saude",
+  },
+  {
+    text: "Tecnologia",
+    path: "category/tecnologia",
+  },
 ];

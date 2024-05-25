@@ -3,7 +3,7 @@ import SectionContainer from "../Layout/SectionContainer";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-main py-[20px]">
+    <footer className="bg-main py-[20px] text-textColorSecondary">
       <SectionContainer>
         <p>NB {new Date().getFullYear()}</p>
       </SectionContainer>

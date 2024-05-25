@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { Aleo } from "next/font/google";
 
 import Nav from "./_components/Nav/Nav";
-import SectionContainer from "./_components/Layout/SectionContainer";
 import Footer from "./_components/Footer/Footer";
+import { CategoriesNav } from "./_components/CategoriesNav/CategoriesNav";
+import { isMobileDeviceSSR } from "./_utils/serverResponsive";
+
+import { MOCK_CATEGORIES } from "./_mock/mock";
 
 import "./globals.css";
 
@@ -19,15 +22,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isMobile = isMobileDeviceSSR();
   return (
     <html lang="en">
       <body
         className={`${aleo.className} flex flex-col min-h-screen bg-grey-500 text-textColor`}
       >
         <Nav />
-
+        {!isMobile && <CategoriesNav links={MOCK_CATEGORIES} />}
         {children}
-
         <Footer />
       </body>
     </html>
