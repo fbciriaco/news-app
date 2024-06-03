@@ -10,7 +10,7 @@ const Nav: React.FC = () => {
   const isMobileSSR = isMobileDeviceSSR();
   return (
     <nav className="h-[80px] bg-main flex w-full shadow-md">
-      <SectionContainer customClasses="flex justify-between items-center py-[10px]">
+      <SectionContainer customClasses="flex justify-between items-center !my-[10px]">
         <Logo />
         <div className="flex-1 ml-0 mr-12 md:mx-8">
           <SearchInput />

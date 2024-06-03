@@ -118,3 +118,27 @@ export const MOCK_CATEGORIES = [
     path: "category/tecnologia",
   },
 ];
+
+export const MOCK_COLUNISTAS = [
+  {
+    imageUrl: "https://picsum.photos/600/400",
+    authorImage: "https://picsum.photos/600/400",
+    author: "Maria Silva",
+    publishedAt: "12/02/2021",
+    title: "Article 1",
+  },
+  {
+    imageUrl: "https://picsum.photos/600/400",
+    authorImage: "https://picsum.photos/600/400",
+    author: "Maria Silva 123",
+    publishedAt: "12/02/2021",
+    title: "Article 123",
+  },
+  {
+    imageUrl: "https://picsum.photos/600/400",
+    authorImage: "https://picsum.photos/600/400",
+    author: "Leo Silva 1234",
+    publishedAt: "12/03/2021",
+    title: "Article 1234",
+  },
+];

@@ -11,7 +11,7 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
 }) => {
   return (
     <div
-      className={`max-w-[1440px] px-[1rem] md:px-[3rem] mx-auto w-full ${customClasses}`}
+      className={`max-w-[1440px] px-[1rem] md:px-[3rem] mx-auto w-full my-[60px] ${customClasses}`}
     >
       {children}
     </div>

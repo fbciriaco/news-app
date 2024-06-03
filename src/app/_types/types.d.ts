@@ -24,3 +24,11 @@ export type CustomLinkType = {
   text: string;
   path: string;
 };
+
+export type ColunistaType = {
+  imageUrl: string;
+  authorImage: string;
+  author: string;
+  publishedAt: string;
+  title: string;
+};

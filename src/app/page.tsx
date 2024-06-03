@@ -24,7 +24,7 @@ export default async function Home() {
   // const articles: ArticleData[] = await fetchArticles();
 
   return (
-    <SectionContainer customClasses="my-[60px] flex-1">
+    <SectionContainer customClasses="flex-1">
       <main className="flex flex-col">
         <div style={{ border: 1 }}>
           <HeadlineFlex
