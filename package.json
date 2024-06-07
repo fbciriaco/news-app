@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "grc:component": "npx generate-react-cli component --"
   },
   "dependencies": {
     "@types/ua-parser-js": "^0.7.39",

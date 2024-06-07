@@ -25,10 +25,63 @@ export const mockArticles: ArticleData[] = [
     tags: ["technology", "news"],
     slug: "another-article",
     category: "Teste",
+    featured: true,
   },
   {
     id: 3,
     title: "Third Article",
+    author: "Bob Johnson",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    publishedAt: "12/04/2021",
+    imageUrl: "https://picsum.photos/600/400",
+    tags: ["technology", "news"],
+    slug: "third-article",
+    category: "Teste",
+  },
+  {
+    id: 4,
+    title: "Third Article 123",
+    author: "Bob Johnson",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    publishedAt: "12/04/2021",
+    imageUrl: "https://picsum.photos/600/400",
+    tags: ["technology", "news"],
+    slug: "third-article",
+    category: "Teste",
+  },
+  {
+    id: 5,
+    title: "Third Article 123456",
+    author: "Bob Johnson",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    publishedAt: "12/04/2021",
+    imageUrl: "https://picsum.photos/600/400",
+    tags: ["technology", "news"],
+    slug: "third-article",
+    category: "Teste",
+  },
+  {
+    id: 6,
+    title: "Third Article 123456",
+    author: "Bob Johnson",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    publishedAt: "12/04/2021",
+    imageUrl: "https://picsum.photos/600/400",
+    tags: ["technology", "news"],
+    slug: "third-article",
+    category: "Teste",
+  },
+  {
+    id: 7,
+    title: "Third Article 123456",
     author: "Bob Johnson",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     content:
@@ -75,7 +128,7 @@ export const MOCK_LINKS: NavItems[] = [
   },
   {
     text: "Quem Somos",
-    path: "/quem-somos",
+    path: "/time",
     type: "link",
   },
 ];
@@ -126,6 +179,7 @@ export const MOCK_COLUNISTAS = [
     author: "Maria Silva",
     publishedAt: "12/02/2021",
     title: "Article 1",
+    url: "/article-1",
   },
   {
     imageUrl: "https://picsum.photos/600/400",
@@ -133,6 +187,7 @@ export const MOCK_COLUNISTAS = [
     author: "Maria Silva 123",
     publishedAt: "12/02/2021",
     title: "Article 123",
+    url: "/article-123",
   },
   {
     imageUrl: "https://picsum.photos/600/400",
@@ -140,5 +195,33 @@ export const MOCK_COLUNISTAS = [
     author: "Leo Silva 1234",
     publishedAt: "12/03/2021",
     title: "Article 1234",
+    url: "/article-1234",
+  },
+];
+
+export const MOCK_TEAM_MEMBERS = [
+  {
+    imageUrl: "https://picsum.photos/id/64/4326/2884",
+    authorImage: "https://picsum.photos/id/64/4326/2884",
+    author: "Leo Silva 1234",
+    role: "Reporter",
+    email: "leo@gmail.com",
+    phone: "0123456",
+  },
+  {
+    imageUrl: "https://picsum.photos/id/64/4326/2884",
+    authorImage: "https://picsum.photos/id/64/4326/2884",
+    author: "Maria Silva 1234",
+    role: "Reporter",
+    email: "leo@gmail.com",
+    phone: "0123456",
+  },
+  {
+    imageUrl: "https://picsum.photos/id/64/4326/2884",
+    authorImage: "https://picsum.photos/id/64/4326/2884",
+    author: "Leia Silva 1234",
+    role: "Reporter",
+    email: "leo@gmail.com",
+    phone: "0123456",
   },
 ];

@@ -9,7 +9,7 @@ export default function HeadlineFlex({
   slug,
 }: ArticleData) {
   return (
-    <Link href={`/article/${slug}`}>
+    <Link href={`/article/${slug}`} className="posts">
       <div className="bg-white mx-auto flex flex-col items-center w-full max-w-[500px]">
         <div className="p-4 rounded-lg shadow-md bg-light-shades w-full">
           <div className="text-main text-sm font-semibold uppercase mb-2 items-start">
