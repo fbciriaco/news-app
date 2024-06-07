@@ -9,6 +9,7 @@ export type ArticleData = {
   category: string;
   tags: string[];
   slug: string;
+  featured?: boolean;
 };
 
 export type ArticleList = ArticleData[];
@@ -31,4 +32,5 @@ export type ColunistaType = {
   author: string;
   publishedAt: string;
   title: string;
+  url: string;
 };

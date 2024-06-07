@@ -13,7 +13,7 @@ export default async function ColunistasPage({
 }) {
   return (
     <div className="flex-1">
-      <SectionContainer>
+      <SectionContainer title="Colunistas">
         <ColumnsContainer>
           {MOCK_COLUNISTAS?.map((colunista: ColunistaType) => (
             <ColunistaCard key={colunista.title} colunista={colunista} />
