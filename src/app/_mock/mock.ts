@@ -21,7 +21,7 @@ export const mockArticles: ArticleData[] = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     publishedAt: "12/03/2021",
-    imageUrl: "https://picsum.photos/600/400",
+    imageUrl: "https://picsum.photos/800/300",
     tags: ["technology", "news"],
     slug: "another-article",
     category: "Teste",
@@ -35,7 +35,7 @@ export const mockArticles: ArticleData[] = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     publishedAt: "12/04/2021",
-    imageUrl: "https://picsum.photos/600/400",
+    imageUrl: "https://picsum.photos/500/400",
     tags: ["technology", "news"],
     slug: "third-article",
     category: "Teste",
@@ -74,7 +74,7 @@ export const mockArticles: ArticleData[] = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     publishedAt: "12/04/2021",
-    imageUrl: "https://picsum.photos/600/400",
+    imageUrl: "https://picsum.photos/300/400",
     tags: ["technology", "news"],
     slug: "third-article",
     category: "Teste",
@@ -87,7 +87,7 @@ export const mockArticles: ArticleData[] = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     publishedAt: "12/04/2021",
-    imageUrl: "https://picsum.photos/600/400",
+    imageUrl: "https://picsum.photos/500/400",
     tags: ["technology", "news"],
     slug: "third-article",
     category: "Teste",
@@ -224,4 +224,11 @@ export const MOCK_TEAM_MEMBERS = [
     email: "leo@gmail.com",
     phone: "0123456",
   },
+];
+
+export const MOCK_IMAGES = [
+  "https://picsum.photos/600/400",
+  "https://picsum.photos/600/300",
+  "https://picsum.photos/600/800",
+  "https://picsum.photos/600/900",
 ];

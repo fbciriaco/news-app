@@ -3,7 +3,6 @@ import HeadlineGrid from "@/app/_components/Headline/HeadlineGrid";
 
 import { mockArticle } from "./_mock/mock";
 import SectionContainer from "./_components/Layout/SectionContainer";
-import { ArticleData } from "./_types/types";
 
 const fetchArticles = async () => {
   try {
