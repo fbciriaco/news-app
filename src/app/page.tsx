@@ -3,6 +3,7 @@ import HeadlineGrid from "@/app/_components/Headline/HeadlineGrid";
 
 import { mockArticle } from "./_mock/mock";
 import SectionContainer from "./_components/Layout/SectionContainer";
+import { ArticleData } from "./_types/types";
 
 const fetchArticles = async () => {
   try {
@@ -20,7 +21,7 @@ const fetchArticles = async () => {
 };
 
 export default async function Home() {
-  // const articles: ArticleData[] = await fetchArticles();
+  const articles: ArticleData[] = await fetchArticles();
 
   return (
     <SectionContainer customClasses="flex-1">
@@ -37,11 +38,11 @@ export default async function Home() {
             category="Teste"
             imgUrl="https://picsum.photos/600/400?grayscale"
           />
-          {/* <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-[20px]">
             {articles?.map((article: ArticleData) => (
               <HeadlineFlex key={article.id} {...article} />
             ))}
-          </div> */}
+          </div>
         </div>
       </main>
     </SectionContainer>

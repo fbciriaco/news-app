@@ -39,10 +39,11 @@ export default async function ArticlePage({
 }: {
   params: { slug: string };
 }) {
-  // const [article] = await getArticle(params.slug);
-  const { title, description, imageUrl, content } = mockArticle as ArticleData;
+  const [article] = await getArticle(params.slug);
+  const { title, description, imageUrl, content } = article as ArticleData;
+  console.log(article);
 
-  // const contentSerialized = serialize(content);
+  const contentSerialized = serialize(content);
 
   return (
     <div className="flex-1">
@@ -54,10 +55,10 @@ export default async function ArticlePage({
       <SectionContainer>
         <h1>{title}</h1>
         <p>{description}</p>
-        {/* <div>
+        <div>
           <h1>Serial</h1>
           {contentSerialized}
-        </div> */}
+        </div>
       </SectionContainer>
     </div>
   );
