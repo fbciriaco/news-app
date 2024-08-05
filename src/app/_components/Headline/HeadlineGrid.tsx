@@ -6,7 +6,7 @@ export default function HeadlineGrid(props: any) {
           {props.category}
         </div>
         <img
-          src={props.imgUrl}
+          src={props.imageUrl}
           alt="News"
           className="h-40 w-full object-cover rounded-lg mx-auto"
         />

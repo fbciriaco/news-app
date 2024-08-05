@@ -36,7 +36,7 @@ export default async function Home() {
           <HeadlineGrid
             title="Este é um título teste para outra notícia (usando grid)"
             category="Teste"
-            imgUrl="https://picsum.photos/600/400?grayscale"
+            imageUrl="https://picsum.photos/600/400?grayscale"
           />
           <div className="flex flex-col gap-[20px]">
             {articles?.map((article: ArticleData) => (
