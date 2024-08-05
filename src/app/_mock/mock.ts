@@ -136,39 +136,39 @@ export const MOCK_LINKS: NavItems[] = [
 export const MOCK_CATEGORIES = [
   {
     text: "Brasil",
-    path: "category/brasil",
+    path: "/brasil",
   },
   {
     text: "Cidades",
-    path: "category/cidades",
+    path: "/cidades",
   },
   {
     text: "Economia",
-    path: "category/economia",
+    path: "/economia",
   },
   {
     text: "Educação",
-    path: "category/educacao",
+    path: "/educacao",
   },
   {
     text: "Esportes",
-    path: "category/esportes",
+    path: "/esportes",
   },
   {
     text: "Internacional",
-    path: "category/internacional",
+    path: "/internacional",
   },
   {
     text: "Política",
-    path: "category/politica",
+    path: "/politica",
   },
   {
     text: "Saúde",
-    path: "category/saude",
+    path: "/saude",
   },
   {
     text: "Tecnologia",
-    path: "category/tecnologia",
+    path: "/tecnologia",
   },
 ];
 
