@@ -1,13 +1,16 @@
 import { useState } from "react";
 import styled from "styled-components";
+import SlidingPane from "react-sliding-pane";
+import "react-sliding-pane/dist/react-sliding-pane.css";
+import { CustomLink } from "../Link/Link";
 
 const StyledBurger = styled.div<{ open: boolean }>`
   width: 2rem;
   height: 2rem;
-  position: fixed;
+  position: absolute;
   top: 25px;
   right: 20px;
-  z-index: 20;
+  z-index: 101;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -18,7 +21,7 @@ const StyledBurger = styled.div<{ open: boolean }>`
     background-color: ${({ open }) => (open ? "#F4F4EF" : "#F4F4EF")};
     border-radius: 10px;
     transform-origin: 1px;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
     }
@@ -32,7 +35,11 @@ const StyledBurger = styled.div<{ open: boolean }>`
   }
 `;
 
-export const BurgerNav = ({ links }) => {
+type BurgerNavProps = {
+  links: { text: string; path: string }[];
+};
+
+export const BurgerNav: React.FC<BurgerNavProps> = ({ links }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -41,18 +48,26 @@ export const BurgerNav = ({ links }) => {
         <div />
         <div />
       </StyledBurger>
+      <SlidingPane
+        className="bg-dark-shades relative"
+        overlayClassName="z-[100]"
+        isOpen={open}
+        from="right"
+        width="80%"
+        onRequestClose={() => setOpen(false)}
+        hideHeader
+      >
+        <div className="bg-dark-shades flex flex-col items-center gap-2 pt-[60px]">
+          {links.map((link) => (
+            <CustomLink
+              key={link.text}
+              text={link.text}
+              path={link.path}
+              onClick={() => setOpen(false)}
+            />
+          ))}
+        </div>
+      </SlidingPane>
     </>
   );
 };
-
-// <Menu right styles={styles}>
-//   <a id="home" className="menu-item" href="/">
-//     Home
-//   </a>
-//   <a id="about" className="menu-item" href="/about">
-//     About
-//   </a>
-//   <a id="contact" className="menu-item" href="/contact">
-//     Contact
-//   </a>
-// </Menu>
