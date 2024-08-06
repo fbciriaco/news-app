@@ -1,5 +1,5 @@
-import HeadlineFlex from "@/app/_components/Headline/HeadlineFlex";
 import SectionContainer from "@/app/_components/Layout/SectionContainer";
+import NewsCard from "@/app/_components/NewsCard/NewsCard";
 import NewsColumns from "@/app/_components/NewsColumns/NewsColumns";
 import { ArticleData } from "@/app/_types/types";
 
@@ -39,7 +39,7 @@ export default async function CategoryPage({
       <SectionContainer>
         <NewsColumns>
           {articles?.map((article: ArticleData) => (
-            <HeadlineFlex key={article.id} {...article} />
+            <NewsCard key={article.id} {...article} />
           ))}
         </NewsColumns>
       </SectionContainer>

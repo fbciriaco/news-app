@@ -24,6 +24,7 @@ export type NavItems = {
 export type CustomLinkType = {
   text: string;
   path: string;
+  onClick?: () => void;
 };
 
 export type ColunistaType = {
