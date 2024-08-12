@@ -22,7 +22,6 @@ async function getArticle(slug: string) {
       `${process.env.NEXT_PUBLIC_API_URL}/articles${stringifiedQuery}`
     );
     const data = await response.json();
-
     return (
       data.docs.map((doc: any) => ({
         ...doc,
@@ -39,7 +38,7 @@ export default async function ArticlePage({
 }: {
   params: { slug: string };
 }) {
-  const [article] = await getArticle(params.slug);
+  const [article = {}] = await getArticle(params.slug);
   const { title, description, imageUrl, content } = article as ArticleData;
   console.log(article);
 
