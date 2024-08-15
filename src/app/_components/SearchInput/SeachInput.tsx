@@ -1,4 +1,5 @@
 "use client";
+import { FaSearch } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -7,7 +8,7 @@ export const SearchInput = () => {
   const router = useRouter();
 
   const handleAction = () => {
-    console.log(search);
+    if (!search) return;
     router.push("/search?q=" + search);
     setSearch("");
   };
@@ -34,13 +35,13 @@ export const SearchInput = () => {
         value={search}
         onChange={handleSearch}
         onKeyDown={handleKeyDown}
-        className="bg-light-shades pl-[10px] pr-[40px] p-2 rounded-[100px] w-full focus:border-0 focus:outline-none"
+        className="bg-light-shades pl-[12px] pr-[40px] p-2 rounded-[100px] w-full focus:border-0 focus:outline-none"
       />
       <button
-        className="w-[20px] h-[20px] bg-gray-200 rounded-full absolute right-2 top-[8px]"
+        className="w-[20px] h-[20px] rounded-full absolute right-2 top-[10px]"
         onClick={handleClick}
       >
-        S
+        <FaSearch />
       </button>
     </div>
   );
