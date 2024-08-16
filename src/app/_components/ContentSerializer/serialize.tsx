@@ -36,10 +36,18 @@ const serialize = (children) =>
 
     switch (node.type) {
       case "h1":
-        return <h1 key={i}>{serialize(node.children)}</h1>;
+        return (
+          <h1 key={i} className="text-2xl font-bold">
+            {serialize(node.children)}
+          </h1>
+        );
       // Iterate through all headings here...
       case "h6":
-        return <h6 key={i}>{serialize(node.children)}</h6>;
+        return (
+          <h6 key={i} className="text-xl font-bold">
+            {serialize(node.children)}
+          </h6>
+        );
       case "blockquote":
         return <blockquote key={i}>{serialize(node.children)}</blockquote>;
       case "ul":
@@ -55,7 +63,7 @@ const serialize = (children) =>
 
       case "link":
         return (
-          <a href={escapeHTML(node.url)} key={i}>
+          <a href={escapeHTML(node.url)} key={i} className="mb-2">
             {serialize(node.children)}
           </a>
         );

@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const Logo = () => {
   return (
-    <div className="logo h-full">
+    <Link className="logo h-full" href="/">
       <Image
         src="/images/nb-logo.png"
         alt="Logo"
@@ -11,6 +12,6 @@ export const Logo = () => {
         height={40}
         className="h-full"
       />
-    </div>
+    </Link>
   );
 };
