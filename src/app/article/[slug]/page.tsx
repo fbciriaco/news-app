@@ -1,4 +1,5 @@
 import serialize from "@/app/_components/ContentSerializer/serialize";
+import ImageOnError from "@/app/_components/ImageOnError/ImageOnError";
 import SectionContainer from "@/app/_components/Layout/SectionContainer";
 import { mockArticle } from "@/app/_mock/mock";
 import { ArticleData } from "@/app/_types/types";
@@ -40,24 +41,21 @@ export default async function ArticlePage({
 }) {
   const [article = {}] = await getArticle(params.slug);
   const { title, description, imageUrl, content } = article as ArticleData;
-  console.log(article);
 
   const contentSerialized = serialize(content);
 
   return (
     <div className="flex-1">
-      <img
-        src={imageUrl}
-        alt={title}
-        className="w-full max-h-[400px] object-cover"
-      />
-      <SectionContainer>
-        <h1>{title}</h1>
-        <p>{description}</p>
-        <div>
-          <h1>Serial</h1>
-          {contentSerialized}
-        </div>
+      {imageUrl && (
+        <ImageOnError
+          imageUrl={imageUrl}
+          className="w-full max-h-[400px] object-cover"
+        />
+      )}
+      <SectionContainer customClasses="gap-[24px] flex flex-col">
+        <h1 className="text-4xl">{title}</h1>
+        <p className="text-xl">{description}</p>
+        <div>{contentSerialized}</div>
       </SectionContainer>
     </div>
   );

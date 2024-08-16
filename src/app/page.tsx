@@ -4,6 +4,7 @@ import HeadlineGrid from "@/app/_components/Headline/HeadlineGrid";
 import { mockArticle } from "./_mock/mock";
 import SectionContainer from "./_components/Layout/SectionContainer";
 import { ArticleData } from "./_types/types";
+import ColumnsContainer from "./_components/Layout/ColumnsContainer";
 
 const fetchArticles = async () => {
   try {
@@ -23,10 +24,23 @@ const fetchArticles = async () => {
 export default async function Home() {
   const articles: ArticleData[] = await fetchArticles();
 
+  const leftSideBar = (
+    <div>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  );
+
   return (
-    <SectionContainer customClasses="flex-1">
+    <SectionContainer customClasses="flex-1 flex">
+      <aside className="w-[25%] hidden md:flex p-4 pt-0 mr-2">
+        {leftSideBar}
+      </aside>
       <main className="flex flex-col">
-        <div style={{ border: 1 }}>
+        <ColumnsContainer>
           <HeadlineFlex
             {...mockArticle}
             title="Este é um título teste para uma notícia"
@@ -38,12 +52,11 @@ export default async function Home() {
             category="Teste"
             imageUrl="https://picsum.photos/600/400?grayscale"
           />
-          <div className="flex flex-col gap-[20px]">
-            {articles?.map((article: ArticleData) => (
-              <HeadlineFlex key={article.id} {...article} />
-            ))}
-          </div>
-        </div>
+
+          {articles?.map((article: ArticleData) => (
+            <HeadlineFlex key={article.id} {...article} />
+          ))}
+        </ColumnsContainer>
       </main>
     </SectionContainer>
   );
